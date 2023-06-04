@@ -16,7 +16,7 @@ import axios from 'axios'
 export default function Home() {
   const [isModal, setIsModal] = useState(false)
   const [test, setTest] = useState([])
-  const [refresh, setRefresh] = useState(0)
+  const [refresh, setRefresh] = useState(null)
   const [text, setText] = useState("Hi ,I am Ramatou Yoland ,")
   async function getData() {
     try {
@@ -28,25 +28,19 @@ export default function Home() {
     }
   }
   useEffect(() => {
-
     getData()
-
-
-
-
-
   }, [refresh])
   const [i, setI] = useState(0);
   useEffect(() => {
     const _text = "Hi ,I am Ramatou Yoland ,I am a Pro  Web developer/full stackdeveloper"
     var i = 0
-    const timer = setInterval(() => {
+    const time = setInterval(() => {
      const temp= _text.slice(0, Math.abs(i))
      setText(temp)
       i > _text.length - 1 ? i *= -1 : i += 1
     }, 200)
     return () => {
-      clearInterval(timer)
+      clearInterval(time)
     }
   }, [])
   useEffect(() => {
