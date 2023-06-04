@@ -67,7 +67,9 @@ export default function Home() {
       </Head>
       <AnimatePresence>
         {
-          isModal && <PopUp setRefresh={setRefresh} closeModal={() => setIsModal(false)} />
+          isModal && <PopUp 
+          setRefresh={setRefresh}
+          closeModal={() => setIsModal(false)} />
 
         }
       </AnimatePresence>
