@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion'
 import axios from 'axios'
 
-const Testimonials = ({ test }) => {
+const Testimonials = ({ test,openModal }) => {
     const _show = {
         hidden: {
             opacity: 0,
@@ -28,8 +28,11 @@ console.log("enter here")
                     what people say about me gives me more reason to build and satisfied my customers in a way be for me
                 </p>
             </div>
-
-            <div class="grid gap-6 text-center md:grid-cols-3">
+<div
+onClick={openModal}
+className="w-[min(calc(100%-2.5rem),15rem)] select-none mx-auto flex items-center justify-center text-lg
+mb-4 text-dark font-medium py-2 text-dark capitalize hover:ring-2 hover:rounded-none ease duration-500 rounded-lg bg-blue-300">Add more review</div>
+            <div class="grid gap-6 text-center md:grid-cols-3" >
                 {
                     test.reverse()?.map((tst, index) => {
                         return (

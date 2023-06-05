@@ -171,7 +171,10 @@ export default function Home() {
             </div>
           </div>
           {/* testimonails */}
-          <Testimonials test={test} />
+          
+          <Testimonials test={test}
+          openModal={()=>setIsModal(true)}
+          />
           <Marquee
             className='mb-4'
           >
