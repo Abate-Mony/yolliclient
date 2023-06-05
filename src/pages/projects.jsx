@@ -123,42 +123,42 @@ local currency`}
                             <div className="relative grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
                                 <div className="px-10 py-20 text-center transition duration-300 transform bg-light text-dark rounded shadow-2xl hover:scale-105 md:shadow-xl hover:shadow-2xl">
                                     <p className="font-semibold text-dark">
-                                        Sed ut perspiciatis unde omnis iste
+                                        Build an E-commerce app with reactjs and implemented card functionality
                                     </p>
                                 </div>
                                 <div className="px-10 py-20 text-center transition duration-300 transform bg-light text-dark rounded shadow-2xl hover:scale-105 md:shadow-xl hover:shadow-2xl">
                                     <p className="font-semibold text-dark">
-                                        Well, the way they make shows is
+                                      Build a react dashboard with reactjs and bootstrap
                                     </p>
                                 </div>
                                 <div className="px-10 py-20 text-center transition duration-300 transform bg-light text-dark rounded shadow-2xl hover:scale-105 md:shadow-xl hover:shadow-2xl">
                                     <p className="font-semibold text-dark">
-                                        Some dont, become nothing again
+                                        build a demo card with plainjs and html using js module 
                                     </p>
                                 </div>
                                 <div className="px-10 py-20 text-center transition duration-300 transform bg-light text-dark rounded shadow-2xl hover:scale-105 md:shadow-xl hover:shadow-2xl">
                                     <p className="font-semibold text-dark">
-                                        Pommy ipsum smeg head whizz morris
+                                    work with a team to build and deploy a nice ui dashboard 
                                     </p>
                                 </div>
                                 <div className="px-10 py-20 text-center transition duration-300 transform bg-light text-dark rounded shadow-2xl hover:scale-105 md:shadow-xl hover:shadow-2xl">
                                     <p className="font-semibold text-dark">
-                                        Taking the mick middle class bog
+                                    built a drawing app using canvas and js
                                     </p>
                                 </div>
                                 <div className="px-10 py-20 text-center transition duration-300 transform bg-light text-dark rounded shadow-2xl hover:scale-105 md:shadow-xl hover:shadow-2xl">
                                     <p className="font-semibold text-dark">
-                                        Sportacus andrew weatherall goose
+                                    clonewhatsapp webiste usinghtml css bootstrap and js
                                     </p>
                                 </div>
                                 <div className="px-10 py-20 text-center transition duration-300 transform bg-light text-dark rounded shadow-2xl hover:scale-105 md:shadow-xl hover:shadow-2xl">
                                     <p className="font-semibold text-dark">
-                                        Semi beard cream bun disaster alpha
+                                       clone facebook website
                                     </p>
                                 </div>
                                 <div className="px-10 py-20 text-center transition duration-300 transform bg-light text-dark rounded shadow-2xl hover:scale-105 md:shadow-xl hover:shadow-2xl">
                                     <p className="font-semibold text-dark">
-                                        Bro ipsum dolor sit amet gaper dart
+                                    Build many Project just check my github account
                                     </p>
                                 </div>
                             </div>
