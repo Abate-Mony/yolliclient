@@ -4,7 +4,6 @@ import { useState } from "react"
 import axios from 'axios'
 
 const PopUp = ({ closeModal,setRefresh}) => {
-    const [isScale, setIsScale] = useState(false);
     const [name, setName] = useState("")
     const [description, setDescription] = useState("");
 
@@ -18,10 +17,8 @@ const PopUp = ({ closeModal,setRefresh}) => {
             })
             setRefresh(Math.random())
             closeModal()
-            // alert("then and dusted")
         }catch(err) {
             console.log(err)
-            // alert(err.response.message)
             alert("some error occurs")
         }
     }

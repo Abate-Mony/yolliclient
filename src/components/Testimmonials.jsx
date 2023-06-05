@@ -17,15 +17,7 @@ const Testimonials = ({ test }) => {
             }
         }
     }
-    useEffect(() => {
-
-
-
-
-
-
-    }, [])
-
+console.log("enter here")
     return (
 
 

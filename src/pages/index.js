@@ -12,37 +12,27 @@ import { AnimatePresence } from 'framer-motion'
 import Testimonials from '../components/Testimmonials'
 import { useState, useEffect } from 'react'
 import axios from 'axios'
-
+import Write from "../components/Write"
 export default function Home() {
   const [isModal, setIsModal] = useState(false)
   const [test, setTest] = useState([])
   const [refresh, setRefresh] = useState(null)
-  const [text, setText] = useState("Hi ,I am Ramatou Yoland ,")
-  async function getData() {
-    try {
-      const res = await axios.get("https://yolliserver.vercel.app/testimonials", {})
-      setTest(res?.data?.testimonials);
-    }
-    catch (err) {
-      console.log(err)
-    }
-  }
+  // const [text, setText] = useState("Hi ,I am Ramatou Yoland ,")
+
   useEffect(() => {
+    async function getData() {
+      try {
+        const res = await axios.get("https://yolliserver.vercel.app/testimonials", {})
+        setTest(res?.data?.testimonials);
+        console.log("wait here")
+      }
+      catch (err) {
+        console.log(err)
+      }
+    }
     getData()
   }, [refresh])
-  const [i, setI] = useState(0);
-  useEffect(() => {
-    const _text = "Hi ,I am Ramatou Yoland ,I am a Pro  Web developer/full stackdeveloper"
-    var i = 0
-    const time = setInterval(() => {
-     const temp= _text.slice(0, Math.abs(i))
-     setText(temp)
-      i > _text.length - 1 ? i *= -1 : i += 1
-    }, 200)
-    return () => {
-      clearInterval(time)
-    }
-  }, [])
+
   useEffect(() => {
 
     const timer = setTimeout(() => {
@@ -61,9 +51,9 @@ export default function Home() {
       </Head>
       <AnimatePresence>
         {
-          isModal && <PopUp 
-          setRefresh={setRefresh}
-          closeModal={() => setIsModal(false)} />
+          isModal && <PopUp
+            setRefresh={setRefresh}
+            closeModal={() => setIsModal(false)} />
 
         }
       </AnimatePresence>
@@ -73,18 +63,19 @@ export default function Home() {
             <div className='flex-1'>
               <Image src={profilepic} alt="user" className="w-full h-auto" />
             </div>
+
             <div className='flex-1 flex flex-col self-center '>
-              
-              {/* {text} */}
+              <Write />
+              {/* 
               <h1 className=" break-words px-4 md:px-6 lg:px-10
             inline-block w-full text-dark font-bold capitalize !text-3xl md:!text-4xl lg:!text-6xl md:text-left
-            ">{text} </h1>
-            <AnimatedText className='!text-3xl md:!text-4xl lg:!text-6xl md:text-left
+            ">{text} </h1> */}
+              <AnimatedText className='!text-3xl md:!text-4xl lg:!text-6xl md:text-left
             
               
             '
-              text={"Turning Vision"}
-            />
+                text={"Turning Vision"}
+              />
               <p
                 className='my-4 text-base font-medium mb-4
                 bg-gradient-to-r from-black to-slate-400 bg-clip-text
